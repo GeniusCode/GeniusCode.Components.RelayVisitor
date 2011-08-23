@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 
-namespace GeniusCode.Framework.Support.Objects
+namespace GeniusCode.Components.RelayVisitor
 {
     public interface ILog
     {

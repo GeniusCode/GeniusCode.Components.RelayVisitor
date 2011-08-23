@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace GeniusCode.Framework.Support.Objects
+namespace GeniusCode.Components.RelayVisitor
 {
 
     internal class VisitRouteNode<I, O> : IVisitRouteNode

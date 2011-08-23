@@ -1,5 +1,5 @@
 
-namespace GeniusCode.Framework.Support.Objects
+namespace GeniusCode.Components.RelayVisitor
 {
     #region Support
     public enum VisitMode

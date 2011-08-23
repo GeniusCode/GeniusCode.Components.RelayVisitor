@@ -1,56 +1,53 @@
-﻿
+﻿using GeniusCode.Components.RelayVisitor.Tests.Support;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Diagnostics;
 using System.Collections.ObjectModel;
-using GeniusCode.Framework.Support.Objects;
-namespace GcCore.Tests
+
+
+namespace GeniusCode.Components.RelayVisitor.Tests
 {
 
-    [TestClass()]
+    [TestClass]
     public class RecursiveWalkerTest
     {
 
 
-        [TestMethod()]
-        public void Simple_Go_Test()
+        [TestMethod]
+        public void Should_get_types()
         {
-            List<string> TypeNames = new List<string>();
+            var typeNames = new List<string>();
             
-            RelayVisitor<Type> typeWalker = new RelayVisitor<Type>(true);
-            typeWalker.AddActionForRootType(o => TypeNames.Add(o.AssemblyQualifiedName));
-            typeWalker.AddScoutForRootType(o => o.BaseType);
-            typeWalker.AddScoutForRootType(o => o.GetInterfaces());
-
-            typeWalker.AddActionForRootType(o=> Debug.WriteLine(o));
-
-            typeWalker.Log = new DebugWriteLogger();
+            var typeWalker = GetRelayVisiterForTypes(typeNames);
 
             typeWalker.Go(typeof(ObservableCollection<>));
 
-            Assert.AreEqual(11,TypeNames.Count);
+            Assert.AreEqual(11,typeNames.Count);
+        }
+
+        private static RelayVisitor<Type> GetRelayVisiterForTypes(List<string> typeNames)
+        {
+            var typeWalker = new RelayVisitor<Type>(true);
+            typeWalker.AddActionForRootType(o => typeNames.Add(o.AssemblyQualifiedName));
+            typeWalker.AddScoutForRootType(o => o.BaseType);
+            typeWalker.AddScoutForRootType(o => o.GetInterfaces());
+
+            typeWalker.AddActionForRootType(o => Debug.WriteLine(o));
+
+            typeWalker.Log = new DebugWriteLogger();
+            return typeWalker;
         }
 
 
         [TestMethod()]
-        public void GoTest_WithStopPoint()
+        public void Should_get_types_except_for_stop_point()
         {
-            List<string> TypeNames = new List<string>();
-
-            RelayVisitor<Type> visitor = new RelayVisitor<Type>(true);
-            
-            visitor.AddScoutForRootType(o => o.BaseType, null);
-            visitor.AddScoutForRootType(o => o.GetInterfaces().ToList(), null);
-
-
-            visitor.AddActionForRootType(o => TypeNames.Add(o.AssemblyQualifiedName));
-            visitor.AddActionForRootType(o => Debug.WriteLine(o));
-
-            visitor.GoUntil(typeof(ObservableCollection<>),()=> TypeNames.Count == 1);
-
-            Assert.AreEqual(1,TypeNames.Count());
+            var typeNames = new List<string>();
+            var visitor = GetRelayVisiterForTypes(typeNames);
+            visitor.GoUntil(typeof(ObservableCollection<>),()=> typeNames.Count == 5);
+            Assert.AreEqual(5,typeNames.Count());
         }
     }
 }

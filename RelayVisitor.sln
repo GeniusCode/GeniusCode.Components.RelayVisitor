@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelayVisitor.Tests", "RelayVisitor.Tests\RelayVisitor.Tests.csproj", "{24CD8B63-7396-47DF-80C7-F01E4F604EA9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gcRelayVisitor.Tests", "RelayVisitor.Tests\gcRelayVisitor.Tests.csproj", "{24CD8B63-7396-47DF-80C7-F01E4F604EA9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B732835E-DDC6-4E0B-B410-4AB37779BFBB}"
 	ProjectSection(SolutionItems) = preProject

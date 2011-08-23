@@ -1,8 +1,7 @@
 using System;
 using System.Diagnostics;
-using GeniusCode.Framework.Support.Objects;
 
-namespace GcCore.Tests
+namespace GeniusCode.Components.RelayVisitor.Tests.Support
 {
     public class DebugWriteLogger : ILog
     {

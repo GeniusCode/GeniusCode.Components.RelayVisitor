@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GeniusCode.Framework.Support.Objects
+namespace GeniusCode.Components.RelayVisitor
 {
 
     public interface IRelayVisitor<TRoot> : IRelayVisitor

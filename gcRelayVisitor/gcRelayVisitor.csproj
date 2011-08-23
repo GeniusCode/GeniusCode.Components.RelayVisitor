@@ -6,7 +6,7 @@
     <ProjectGuid>{30B2613B-AD45-42D2-818E-DC9DF626C144}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>gcRelayVisitor</RootNamespace>
+    <RootNamespace>GeniusCode.Components.RelayVisitor</RootNamespace>
     <AssemblyName>gcRelayVisitor</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile1</TargetFrameworkProfile>
@@ -47,14 +47,10 @@
     <Compile Include="RelayVisitor.cs" />
     <Compile Include="ILog.cs" />
     <Compile Include="RelayVisitorBase.cs" />
-    <Compile Include="RelayVisitorBase_Partial_Virtuals.cs" />
     <Compile Include="RelayVisitorExceptionHandledEventArgs.cs" />
     <Compile Include="VisitRouteNode.cs" />
     <Compile Include="VisitRouteNodeFactory.cs" />
-    <Compile Include="WalkerMode.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="RecursionDiagram.cd" />
+    <Compile Include="VisitMode.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
