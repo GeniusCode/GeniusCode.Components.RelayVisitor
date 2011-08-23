@@ -50,12 +50,11 @@
     <Compile Include="RecursiveWalkerTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\gcRelayVisitor\gcRelayVisitor.csproj">
-      <Project>{30B2613B-AD45-42D2-818E-DC9DF626C144}</Project>
-      <Name>gcRelayVisitor</Name>
+    <ProjectReference Include="..\gcRelayVisitor35\gcRelayVisitor35.csproj">
+      <Project>{D335EFF0-D0F5-4B25-A65A-A7FD3268C0F5}</Project>
+      <Name>gcRelayVisitor35</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
