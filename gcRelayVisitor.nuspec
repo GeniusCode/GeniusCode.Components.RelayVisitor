@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>gcRelayVisitor</id>
+    <version>1.0</version>
+    <title>Relay Visitor</title>
+    <authors>JeremiahRedekop,Ryan D Hatch</authors>
+    <owners>GeniusCode,LLC</owners>
+    <projectUrl>https://github.com/GeniusCode/GeniusCode.Components.RelayVisitor</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Vistor class that allows for delegates to be assigned for simple recursive operations</description>
+    <summary>Delegate based Visitor class</summary>
+    <tags>visitor, delegate</tags>
+  </metadata>
+  <files>
+    <file src="gcRelayVisitor\bin\Debug\gcRelayVisitor.dll" target="lib\net40\gcRelayVisitor.dll" />
+	<file src="gcRelayVisitor\bin\Debug\gcRelayVisitor.dll" target="lib\sl40\gcRelayVisitor.dll" />
+  </files>
+</package>
