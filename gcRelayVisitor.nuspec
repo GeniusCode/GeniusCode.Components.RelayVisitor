@@ -2,6 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>gcRelayVisitor</id>
+    <version>1.0</version>
     <title>Relay Visitor</title>
     <authors>JeremiahRedekop,Ryan D Hatch</authors>
     <owners>GeniusCode,LLC</owners>
