@@ -13,7 +13,7 @@
     <tags>visitor, delegate</tags>
   </metadata>
   <files>
-    <file src="gcRelayVisitor\bin\Release\gcRelayVisitor.dll" target="lib\net40\gcRelayVisitor.dll" />
-	<file src="gcRelayVisitor\bin\Release\gcRelayVisitor.dll" target="lib\sl40\gcRelayVisitor.dll" />
+    <file src="gcRelayVisitor35\bin\Release\gcRelayVisitor35.dll" target="lib\net40\gcRelayVisitor.dll" />
+	<file src="gcRelayVisitorSl4\bin\Release\gcRelayVisitorSl4.dll" target="lib\sl40\gcRelayVisitor.dll" />
   </files>
 </package>
