@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GeniusCode.Components.RelayVisitor</RootNamespace>
-    <AssemblyName>gcRelayVisitor35</AssemblyName>
+    <AssemblyName>gcRelayVisitor</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
